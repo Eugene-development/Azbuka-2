@@ -1,4 +1,4 @@
-import { contentTest } from '../data/test/index';
+import { contentTest } from '$lib/data/test/index';
 
 export function load() {
 	return {
