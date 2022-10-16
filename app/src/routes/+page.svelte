@@ -49,6 +49,6 @@ console.log(data);
 <!-- {data.response2.catalog[0].value} -->
 <!-- <button on:click={pay}>Calculate</button> -->
 
-<!-- {#each data.catalog as {value}}
-    {value}
-{/each} -->
+{#each data.response2.catalog as {value}}
+    {value}-
+{/each}
