@@ -17,3 +17,11 @@ export const ALL_CATALOG = gql`
 		}
 	}
 `;
+
+export const POKEMONS = gql`
+	query pok {
+		pokemons(first: 8) {
+			name
+		}
+	}
+`;

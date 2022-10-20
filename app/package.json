@@ -7,7 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"start": "PORT=9999 node my-output-directory/index.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -24,6 +25,14 @@
 	"type": "module",
 	"dependencies": {
 		"graphql": "^16.6.0",
-		"graphql-request": "^5.0.0"
+		"graphql-request": "^5.0.0",
+		"@sveltejs/adapter-node": "^1.0.0-next.88",
+		"@tailwindcss/aspect-ratio": "^0.4.0",
+		"@tailwindcss/forms": "^0.5.2",
+		"@tailwindcss/typography": "^0.5.4",
+		"axios": "^0.27.2",
+		"font-awesome": "^4.7.0",
+		"symax": "latest",
+		"typograf": "^6.14.1"
 	}
 }

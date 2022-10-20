@@ -1,3 +1,4 @@
+
 <script>
     // import { onMount } from 'svelte';
     // onMount(() => {
@@ -49,6 +50,9 @@ console.log(data);
 <!-- {data.response2.catalog[0].value} -->
 <!-- <button on:click={pay}>Calculate</button> -->
 
-{#each data.response2.catalog as {value}}
-    {value}-
+{#each data.response2.pokemons as {name}}
+    {name}-
 {/each}
+<!-- {#each data.response2.catalog as {value}}
+    {value}-
+{/each} -->
