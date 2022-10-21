@@ -33,16 +33,12 @@
 //   export let response;
 // export let catalog
 // console.log(data);
-export let data
+
 // console.log(data.response.catalog[0].value);
-console.log(data);
+// console.log(data);
 
+// export let data
 </script>
-
-
-
-<h1>Welcome to SvelteKit</h1>
-<p class="text-red-800">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 <!-- {data.contentTest.content.myTest2} -->
 
@@ -50,9 +46,9 @@ console.log(data);
 <!-- {data.response2.catalog[0].value} -->
 <!-- <button on:click={pay}>Calculate</button> -->
 
-{#each data.response2.pokemons as {name}}
+<!-- {#each data.response2.pokemons as {name}}
     {name}-
-{/each}
+{/each} -->
 <!-- {#each data.response2.catalog as {value}}
     {value}-
 {/each} -->
