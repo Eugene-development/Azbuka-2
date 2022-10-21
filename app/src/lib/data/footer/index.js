@@ -1,4 +1,7 @@
 const yearStart = '2001';
+const now = new Date();
+const yearNow = now.getFullYear();
+
 const text = 'Компания МосМебель. Кухонные гарнитуры и шкафы купе на заказ.';
 const phoneService = '+7 (495) 147-55-50';
 
@@ -27,6 +30,7 @@ const menu = [
 
 const content = {
 	yearStart,
+	yearNow,
 	text,
 	phoneService,
 	menu

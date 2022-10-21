@@ -1,13 +1,12 @@
 <script>
     /** @type {import('./$types').PageData} */
-    export let data;
-    console.log(data)
+    export let content;
 </script>
 <!-- <pre>{data.contentFooter.content.yearStart}</pre> -->
 <footer class="bg-gray-50">
 	<div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-			{#each data.contentFooter.content.menu as { value, path }}
+			{#each content.menu as { value, path }}
 				<div class="px-5 py-2">
 					<a href="/{path}" class="text-base text-gray-500"> {value} </a>
 				</div>
@@ -49,9 +48,9 @@
 		<!--                </svg>-->
 		<!--            </a>-->
 		<!--        </div>-->
-		<!-- <p class="mt-8 text-center text-base text-gray-400">
-			&copy; {yearStart}-{yearNow}. {text}
-			<br />Обслуживание сайта {phoneService}
-		</p> -->
+		<p class="mt-8 text-center text-base text-gray-400">
+			&copy; {content.yearStart}-{content.yearNow}. {content.text}
+			<br />Обслуживание сайта {content.phoneService}
+		</p>
 	</div>
 </footer>

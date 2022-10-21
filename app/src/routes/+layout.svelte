@@ -9,4 +9,4 @@
 
 <Header />
   <slot />
-<Footer {data}/>
+<Footer {...data.contentFooter}/>
