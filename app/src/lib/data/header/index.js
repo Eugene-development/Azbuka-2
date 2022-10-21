@@ -57,6 +57,7 @@ const subMenu = [
 ];
 
 const content = {
+	logo,
 	phone,
 	email,
 	menu,
