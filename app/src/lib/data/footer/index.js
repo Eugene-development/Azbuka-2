@@ -8,7 +8,7 @@ const phoneService = '+7 (495) 147-55-50';
 const menu = [
 	{
 		value: 'Главная',
-		path: '/'
+		path: ''
 	},
 	{
 		value: 'Шкафы',
