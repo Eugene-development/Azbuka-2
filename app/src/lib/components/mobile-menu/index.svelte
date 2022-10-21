@@ -2,7 +2,6 @@
 	import { visibleMobileMenu } from '$lib/store/stores.js';
 	import { useInvert } from '$lib/functions/broker';
 	const { invert } = useInvert;
-	const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
 	export let content;
 	
 </script>
@@ -13,7 +12,7 @@
 	>
 		<div class="rounded-lg shadow-md ring-1 ring-black ring-opacity-5 overflow-hidden">
 			<div class="px-5 py-2 flex items-center justify-between bg-gray-800">
-				<a on:click={changeVisibleMobileMenu} href="/app/static">
+				<a on:click={() => visibleMobileMenu.update(invert)} href="/app/static">
 					<img
 						class="h-8 w-auto"
 						src="https://storage.yandexcloud.net/brand-logo/mos-mebel/5.png"
@@ -23,7 +22,7 @@
 
 				<div class="-mr-2">
 					<button
-						on:click={changeVisibleMobileMenu}
+						on:click={() => visibleMobileMenu.update(invert)}
 						type="button"
 						class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600"
 					>
@@ -53,7 +52,7 @@
 						<a
 							class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
 							href="/{path}"
-							on:click={changeVisibleMobileMenu}>{value}</a
+							on:click={() => visibleMobileMenu.update(invert)}>{value}</a
 						>
 					{:else}
 						<p>Нет данных!</p>

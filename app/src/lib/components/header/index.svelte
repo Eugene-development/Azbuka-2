@@ -4,9 +4,8 @@
     import { useInvert } from '$lib/functions/broker';
 	import { visibleMobileMenu } from '$lib/store/stores.js';
 	const { invert } = useInvert;
-	const changeVisibleMobileMenu = () => visibleMobileMenu.update(invert);
-
 </script>
+
 <div class="min-h-full border-b-2 border-cyan-400">
 	<nav class="bg-gray-800">
 		<div class="max-w-full mx-auto px-2 sm:px-4 lg:px-6">
@@ -101,7 +100,7 @@
 				<div class="mr-2 flex items-center md:hidden">
 					<!--                    <button type="button" class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" aria-expanded="false">-->
 					<button
-                    on:click={changeVisibleMobileMenu}
+                    on:click={() => visibleMobileMenu.update(invert)}
 						type="button"
 						class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
 						aria-expanded="false"
