@@ -8,7 +8,8 @@
 // }
 
 import { contentBlog } from '$lib/data/blog';
+import { contentCooperation } from '$lib/data/cooperation';
 /** @type {import('./$types').PageLoad} */
 export async function load() {
-	return { contentBlog };
+	return { contentBlog, contentCooperation };
 }

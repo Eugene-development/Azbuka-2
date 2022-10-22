@@ -1,6 +1,7 @@
 
 <script>
     import Blog  from "$lib/components/blog/index.svelte"
+    import Cooperation from "$lib/components/cooperation/index.svelte"
     /** @type {import('./$types').PageData} */
     export let data;
 
@@ -60,5 +61,5 @@
 
 
 
-
+<Cooperation {...data.contentCooperation}/>
 <Blog {...data.contentBlog}/>
