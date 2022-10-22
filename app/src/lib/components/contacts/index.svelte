@@ -189,7 +189,7 @@
 					id="name"
 					autocomplete="name"
 						required
-					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
+					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border"
 				/>
 			</div>
 		</div>
@@ -202,7 +202,7 @@
 					id="position"
 						required
 					autocomplete="position"
-					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
+					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border"
 				/>
 			</div>
 		</div>
@@ -215,7 +215,7 @@
 					name="email"
 					type="email"
 					autocomplete="email"
-					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
+					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border"
 				/>
 			</div>
 		</div>
@@ -230,7 +230,7 @@
 					id="phone"
 						required
 					autocomplete="tel"
-					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border border-gray-300"
+					class="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md border"
 					aria-describedby="phone-optional"
 				/>
 			</div>
