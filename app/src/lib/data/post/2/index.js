@@ -4,7 +4,7 @@ const textHTML = `
                 <div class="relative z-10 mb-8 md:mb-2 md:px-6">
                     <div class="text-base max-w-prose lg:max-w-none">
                         <h2 class="leading-6 text-sky-600 font-semibold tracking-wide uppercase">Пост от 12 июня 2022</h2>
-                        <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Современный кухонный гарнитур на заказ –точная реализация вашей мечты</h1>
+                        <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Современный кухонный гарнитур на заказ – точная реализация вашей мечты</h1>
                     </div>
                 </div>
                 <div class="relative">
