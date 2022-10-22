@@ -7,9 +7,10 @@
 // 	return { response2, contentTest };
 // }
 
-import { contentBlog } from '$lib/data/blog';
+import { contentBenefits } from '$lib/data/benefits';
 import { contentCooperation } from '$lib/data/cooperation';
+import { contentBlog } from '$lib/data/blog';
 /** @type {import('./$types').PageLoad} */
 export async function load() {
-	return { contentBlog, contentCooperation };
+	return { contentBenefits, contentCooperation, contentBlog };
 }
