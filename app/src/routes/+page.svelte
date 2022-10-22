@@ -1,5 +1,9 @@
 
 <script>
+        import Blog  from "$lib/components/blog/index.svelte"
+    /** @type {import('./$types').PageData} */
+    export let data;
+
     // import { onMount } from 'svelte';
     // onMount(() => {
     //   response = request('http://127.0.0.1:8001/graphql/', query);
@@ -52,3 +56,9 @@
 <!-- {#each data.response2.catalog as {value}}
     {value}-
 {/each} -->
+
+
+
+
+
+<Blog {...data.contentBlog}/>

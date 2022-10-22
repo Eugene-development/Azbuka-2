@@ -6,3 +6,9 @@
 // 	const response2 = data.response1;
 // 	return { response2, contentTest };
 // }
+
+import { contentBlog } from '$lib/data/blog';
+/** @type {import('./$types').PageLoad} */
+export async function load() {
+	return { contentBlog };
+}
