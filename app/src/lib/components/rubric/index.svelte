@@ -25,7 +25,7 @@
 			<dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
 				{#each content.types as { title, description, link }}
 					<a href="/{link}" class="border-t border-gray-200 pt-4">
-						<p class="font-medium text-gray-900 font-bold text-lg">{title}</p>
+						<p class=" text-gray-900 font-bold text-lg">{title}</p>
 						<p class="mt-2 text-sm text-gray-500">{description}</p>
 						<p class="mt-4 text-red-700 text-sm">Подробнее -></p>
 					</a>
