@@ -3,7 +3,7 @@
 </script>
 
 
-<div class="my-16 text-center ">
+<div class="py-16 text-center bg-gray-100">
 	<h2 class="text-base text-red-700 font-semibold tracking-wide uppercase">Рубрика</h2>
 	<h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl">
 		{content.mainText.h1}
@@ -11,7 +11,7 @@
 	<!--    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>-->
 </div>
 
-<div class="bg-gradient-to-b from-white via-white to-gray-50">
+<div class="bg-gray-100">
 	<div
 		class="max-w-3xl mx-auto py-12 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8 lg:grid-cols-2"
 	>
