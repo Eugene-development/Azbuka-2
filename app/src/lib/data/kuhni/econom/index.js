@@ -5,7 +5,7 @@ const pathImg =
 
 const parentPage = 'Кухни';
 const parentPageLink = '/kuhni';
-const currentPage = 'Эконом';
+const currentPage = 'Кухонные гарнитуры серии Эконом';
 
 const content_Header_v3 = {
 	parentPage,
@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Эконом',
-	descriptionCategory: ''
+	descriptionCategory: 'Кухонные гарнитуры серии Эконом'
 };
 
 const products = [

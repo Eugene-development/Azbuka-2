@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Прямые',
-	descriptionCategory: ''
+	descriptionCategory: 'Прямые кухонные гарнитуры'
 };
 
 const products = [

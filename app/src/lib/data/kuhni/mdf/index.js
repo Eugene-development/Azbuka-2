@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'МДФ',
-	descriptionCategory: ''
+	descriptionCategory: 'Кухонные гарнитуры с фасадами МДФ'
 };
 
 const products = [

@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Угловые',
-	descriptionCategory: ''
+	descriptionCategory: 'Угловые кухонные гарнитуры'
 };
 
 const products = [

@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Пластик',
-	descriptionCategory: ''
+	descriptionCategory: 'Кухонные гарнитуры с пластиковыми фасадами'
 };
 
 const products = [

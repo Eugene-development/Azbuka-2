@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Модульные',
-	descriptionCategory: ''
+	descriptionCategory: 'Модульные кухонные гарнитуры'
 };
 
 const products = [
