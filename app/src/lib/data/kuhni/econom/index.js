@@ -21,7 +21,7 @@ const mainText = {
 	descriptionCategory: ''
 };
 
-const dataProduct = [
+const products = [
 	{
 		name: 'Дива',
 		text: '2800х2160х600/320',
@@ -56,7 +56,7 @@ const dataProduct = [
 
 const content = {
 	mainText,
-	dataProduct
+	products
 };
 
 export const contentKuhniEconom = {
