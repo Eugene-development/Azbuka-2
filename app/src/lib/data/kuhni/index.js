@@ -1,17 +1,23 @@
-// const title = 'Кухни в Нижнем Новгороде';
-// const description = 'Кухонные гарнитуры на заказ под ваши размеры. Дизайн проект в подарок.';
-// const pathImg =
-// 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg';
+// BC
+const titleBC = 'Кухни в Нижнем Новгороде';
+const descriptionBC = 'Кухонные гарнитуры на заказ под ваши размеры. Дизайн проект в подарок.';
+const pathImgBC =
+	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/kitchens/4.jpg';
 
-// const currentPage = 'Кухни';
+const currentPage = 'Кухни';
+const parentPage = '';
+const parentPageLink = '';
 
-// const content_Header_v3 = {
-// 	currentPage,
-// 	title,
-// 	description,
-// 	pathImg
-// };
+const BC = {
+	currentPage,
+	parentPage,
+	parentPageLink,
+	titleBC,
+	descriptionBC,
+	pathImgBC
+};
 
+// Main
 const mainText = {
 	h1: 'Кухонные гарнитуры на заказ',
 	title: 'Кухонные гарнитуры на заказ и по стандартным модулям',
@@ -86,5 +92,6 @@ const content = {
 };
 
 export const contentKuhni = {
+	BC,
 	content
 };
