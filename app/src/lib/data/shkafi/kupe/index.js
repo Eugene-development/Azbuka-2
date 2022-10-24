@@ -1,19 +1,19 @@
-const title = 'Шкафы купе';
-const description = 'Ознакомьтесь с нашими вариантами шкафов купе на заказ по доступным ценам';
-const pathImg =
+const titleBC = 'Шкафы купе';
+const descriptionBC = 'Ознакомьтесь с нашими вариантами шкафов купе на заказ по доступным ценам';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
 const parentPage = 'Шкафы';
-const parentPageLink = '/shkafy';
+const parentPageLink = 'shkafy';
 const currentPage = 'Купе';
 
-const content_Header_v3 = {
+const BC = {
 	parentPage,
 	parentPageLink,
 	currentPage,
-	title,
-	description,
-	pathImg
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
 const mainText = {
@@ -203,5 +203,6 @@ const content = {
 };
 
 export const contentShkafiKupe = {
+	BC,
 	content
 };

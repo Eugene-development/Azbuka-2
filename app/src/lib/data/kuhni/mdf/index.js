@@ -1,19 +1,19 @@
-const title = 'Кухонные гарнитуры МДФ';
-const description = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с фасадами МДФ';
-const pathImg =
+const titleBC = 'Кухонные гарнитуры МДФ';
+const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с фасадами МДФ';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
 const parentPage = 'Кухни';
-const parentPageLink = '/kuhni';
+const parentPageLink = 'kuhni';
 const currentPage = 'МДФ';
 
-const content_Header_v3 = {
+const BC = {
 	parentPage,
 	parentPageLink,
 	currentPage,
-	title,
-	description,
-	pathImg
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
 const mainText = {
@@ -108,5 +108,6 @@ const content = {
 };
 
 export const contentKuhniMDF = {
+	BC,
 	content
 };

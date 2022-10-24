@@ -1,19 +1,19 @@
-const title = 'Гардеробные';
-const description = 'Ознакомьтесь с нашими вариантами гардеробных различного наполнения';
-const pathImg =
+const titleBC = 'Гардеробные';
+const descriptionBC = 'Ознакомьтесь с нашими вариантами гардеробных различного наполнения';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
 const parentPage = 'Шкафы';
-const parentPageLink = '/shkafy';
+const parentPageLink = 'shkafy';
 const currentPage = 'Гардеробные';
 
-const content_Header_v3 = {
+const BC = {
 	parentPage,
 	parentPageLink,
 	currentPage,
-	title,
-	description,
-	pathImg
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
 const mainText = {
@@ -29,5 +29,6 @@ const content = {
 };
 
 export const contentShkafiGarderobnie = {
+	BC,
 	content
 };

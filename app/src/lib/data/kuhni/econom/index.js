@@ -1,21 +1,23 @@
-const title = 'Кухонные гарнитуры эконом';
-const description = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров серии эконом';
-const pathImg =
+// BC
+const titleBC = 'Кухонные гарнитуры эконом';
+const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров серии эконом';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
 const parentPage = 'Кухни';
-const parentPageLink = '/kuhni';
-const currentPage = 'Кухонные гарнитуры серии Эконом';
+const parentPageLink = 'kuhni';
+const currentPage = 'Эконом';
 
-const content_Header_v3 = {
+const BC = {
 	parentPage,
 	parentPageLink,
 	currentPage,
-	title,
-	description,
-	pathImg
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
+// Main
 const mainText = {
 	titleCategory: 'Эконом',
 	descriptionCategory: 'Кухонные гарнитуры серии Эконом'
@@ -60,5 +62,6 @@ const content = {
 };
 
 export const contentKuhniEconom = {
+	BC,
 	content
 };

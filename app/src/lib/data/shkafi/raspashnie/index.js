@@ -1,19 +1,19 @@
-const title = 'Распашные шкафы';
-const description = 'Ознакомьтесь с нашими вариантами распашных шкафов';
-const pathImg =
+const titleBC = 'Распашные шкафы';
+const descriptionBC = 'Ознакомьтесь с нашими вариантами распашных шкафов';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
 const parentPage = 'Шкафы';
-const parentPageLink = '/shkafy';
+const parentPageLink = 'shkafy';
 const currentPage = 'Распашные';
 
-const content_Header_v3 = {
+const BC = {
 	parentPage,
 	parentPageLink,
 	currentPage,
-	title,
-	description,
-	pathImg
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
 const mainText = {
@@ -66,5 +66,6 @@ const content = {
 };
 
 export const contentShkafiRaspashnie = {
+	BC,
 	content
 };
