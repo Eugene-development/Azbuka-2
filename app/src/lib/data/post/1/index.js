@@ -1,3 +1,23 @@
+// BC
+const titleBC = 'Статья блога';
+const descriptionBC = 'Ознакомьтесь с интересными статьями по мебельной тематике.';
+const pathImgBC =
+	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
+
+const currentPage = 'Статья';
+const parentPage = 'Блог';
+const parentPageLink = 'blog';
+
+const BC = {
+	currentPage,
+	parentPage,
+	parentPageLink,
+	titleBC,
+	descriptionBC,
+	pathImgBC
+};
+
+// MAIN
 const textHTML = `
         <div class="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-white to-gray-50 overflow-hidden">
             <div class="max-w-max lg:max-w-7xl mx-auto">
@@ -63,5 +83,6 @@ const content = {
 };
 
 export const contentPost = {
+	BC,
 	content
 };
