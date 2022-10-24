@@ -1,16 +1,20 @@
-// const title = 'Шкафы в Нижнем Новгороде';
-// const description = 'Шкафы на заказ для вашей комнаты или гардероба. Дизайн проект в подарок.';
-// const pathImg =
-// 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
+const titleBC = 'Шкафы в Нижнем Новгороде';
+const descriptionBC = 'Шкафы на заказ для вашей комнаты или гардероба. Дизайн проект в подарок.';
+const pathImgBC =
+	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
-// const currentPage = 'Шкафы';
+const currentPage = 'Шкафы';
+const parentPage = '';
+const parentPageLink = '';
 
-// const content_Header_v3 = {
-// 	currentPage,
-// 	title,
-// 	description,
-// 	pathImg
-// };
+const BC = {
+	currentPage,
+	parentPage,
+	parentPageLink,
+	titleBC,
+	descriptionBC,
+	pathImgBC
+};
 
 const mainText = {
 	h1: 'Гардеробы и шкафы на заказ',
@@ -86,5 +90,6 @@ const content = {
 };
 
 export const contentShkafi = {
+	BC,
 	content
 };
