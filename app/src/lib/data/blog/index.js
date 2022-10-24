@@ -1,22 +1,25 @@
 import { posts, title, description } from './index.json';
 
-// const title = 'Мебельный блог';
-// const description = 'Ознакомьтесь с интересными статьями по мебельной тематике.';
-// const pathImg =
-// 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
+// BC
+const titleBC = 'Мебельный блог';
+const descriptionBC = 'Ознакомьтесь с интересными статьями по мебельной тематике.';
+const pathImgBC =
+	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
 
-// const parentPage = '';
-// const parentPageLink = '';
-// const currentPage = 'Блог';
+const currentPage = 'Блог';
+const parentPage = '';
+const parentPageLink = '';
 
-// const content_Header_v3 = {
-// 	parentPage,
-// 	parentPageLink,
-// 	currentPage,
-// 	title,
-// 	description,
-// 	pathImg
-// };
+const BC = {
+	currentPage,
+	parentPage,
+	parentPageLink,
+	titleBC,
+	descriptionBC,
+	pathImgBC
+};
+
+// Main
 
 const content = {
 	title,
@@ -24,5 +27,6 @@ const content = {
 	posts
 };
 export const contentBlog = {
+	BC,
 	content
 };

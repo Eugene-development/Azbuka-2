@@ -1,15 +1,20 @@
 // BC
-const currentPage = 'Контакты';
-const title = 'Контакты';
-const description = 'Связаться с нами вы можете по почте, телефону или через чат.';
-const pathImg =
+const titleBC = 'Контакты';
+const descriptionBC = 'Связаться с нами вы можете по почте, телефону или через чат.';
+const pathImgBC =
 	'https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg';
+
+const currentPage = 'Контакты';
+const parentPage = '';
+const parentPageLink = '';
 
 const BC = {
 	currentPage,
-	title,
-	description,
-	pathImg
+	parentPage,
+	parentPageLink,
+	titleBC,
+	descriptionBC,
+	pathImgBC
 };
 
 // Main

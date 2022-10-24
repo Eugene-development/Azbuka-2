@@ -4,13 +4,13 @@
 
 <div class="relative">
 	<div class="absolute inset-0">
-		<img class="w-full h-full object-cover grayscale" src={BC.pathImg} alt="фото фона" />
+		<img class="w-full h-full object-cover grayscale" src={BC.pathImgBC} alt="фото фона" />
 		<div class="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true"></div>
 	</div>
-	<div class="relative max-w-7xl mx-auto py-12 px-4 sm:py-12 sm:px-6 lg:px-8">
+	<div class="relative max-w-7xl mx-auto py-8 px-4 sm:py-10 sm:px-6 lg:px-8">
 
 
-			<ol class="max-w-screen-xl w-full mx-auto pb-16 flex space-x-4">
+			<ol class="max-w-screen-xl w-full mx-auto pb-8 flex space-x-4">
 				<li class="flex">
 					<div class="flex items-center">
 						<a href="/" class="text-gray-100 hover:text-gray-200">
@@ -43,10 +43,10 @@
 				</li>
 			</ol>
 
-		<h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-			{BC.title}
+		<h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
+			{BC.titleBC}
 		</h1>
-		<p class="mt-6 text-xl text-indigo-100 max-w-3xl">{BC.description}</p>
+		<p class="mt-6 text-xl text-indigo-100 max-w-3xl">{BC.descriptionBC}</p>
 		 <!-- <button
 				on:click|preventDefault={changeVisibleFormConsultation}
 			class="mt-8 px-12 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-600 bg-opacity-40 hover:bg-green-400 hover:bg-opacity-30"
