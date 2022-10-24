@@ -22,7 +22,7 @@
 					</div>
 				</li>
 
-				{#if (BC.parentPage)}
+				{#if BC.parentPage}
 					<li class="flex">
 						<div class="flex items-center">
 							<svg class="flex-shrink-0 w-4 h-full text-gray-200" viewBox="0 0 24 44" preserveAspectRatio="none" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
