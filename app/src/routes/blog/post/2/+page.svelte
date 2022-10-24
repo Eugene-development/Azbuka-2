@@ -5,5 +5,5 @@
     export let data;
 </script>
 
-<BreadCrumbs {...data.contentBlog}/>
+<BreadCrumbs {...data.contentPost}/>
 <Blog {...data.contentPost}/>
