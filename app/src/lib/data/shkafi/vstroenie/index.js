@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Встроенные',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Встроенные шкафы-купе'
 };
 
 const products = [
@@ -95,6 +95,6 @@ const content = {
 	products
 };
 
-export const contentShkafiVstroennie = {
+export const contentShkafiVstroenie = {
 	content
 };

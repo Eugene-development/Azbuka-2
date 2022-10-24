@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Гардеробные',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Вместительные гардеробные'
 };
 
 const products = [];

@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Распашные',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Шкафы с распашными дверками'
 };
 
 const products = [

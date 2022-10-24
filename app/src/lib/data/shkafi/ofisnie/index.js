@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Офисные',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Офисные шкафы для бумаг'
 };
 
 const products = [];

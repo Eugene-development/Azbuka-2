@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Двери',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Двери купе для перегородок и ниш'
 };
 
 const products = [

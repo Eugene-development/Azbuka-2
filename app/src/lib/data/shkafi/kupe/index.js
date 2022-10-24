@@ -18,7 +18,7 @@ const content_Header_v3 = {
 
 const mainText = {
 	titleCategory: 'Купе',
-	descriptionCategory: 'текст'
+	descriptionCategory: 'Практичные шкафы-купе'
 };
 
 const products = [
