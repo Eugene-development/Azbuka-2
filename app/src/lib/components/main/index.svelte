@@ -1,16 +1,16 @@
 <script>
     export let content;
 
-	let header = 'a';
-	let subheader= 'a';
-	let nameForm= 'a';
-	let phoneForm= 'a';
-	let addressForm= 'a';
-	let timeForm= 'a';
-	let emailForm= 'a';
-	let variantForm= 'a';
-	let volumeForm= 'a';
-	let comment= 'a'
+	let header = 'Запись на замер';
+	let subheader= 'бесплатно';
+	let nameForm= 'Имя';
+	let phoneForm= 'Телефон';
+	let addressForm= 'Адрес';
+	let timeForm= 'Удобное время';
+	let emailForm= 'Почта';
+	// let variantForm= 'a';
+	// let volumeForm= 'a';
+	let comment= 'После отправки заявки с вами свяжется менеджер'
 
 </script>
 
@@ -205,51 +205,23 @@
 						/>
 					</div>
 						{/if}
-					{#if true}
-					<div>
-						<label for="variant" class="sr-only">{variantForm}</label>
-						<input
-								type="text"
-								name="variant"
-								id="variant"
-								autocomplete="variant"
-								placeholder="{variantForm}"
-								required
-								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
-						{/if}
-					{#if true}
-					<div>
-						<label for="volume" class="sr-only">{volumeForm}</label>
-						<input
-								type="text"
-								name="volume"
-								id="volume"
-								autocomplete="volume"
-								placeholder="{volumeForm}"
-								required
-								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
-					</div>
-						{/if}
 
 
 					<div>
 						{#if true}
 							<span
-									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-300 hover:from-blue-200 via-sky-600 hover:via-sky-700 to-blue-300 hover:to-blue-200 "
+									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
 							>Отправлено</span
 							>
 						{:else}
 							<button
 									type="submit"
-								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-blue-300 hover:from-blue-200 via-sky-600 hover:via-sky-700 to-blue-300 hover:to-blue-200 "
+								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
 								>Отправить</button
 							>
 						{/if}
 					</div>
-					<!--                                        <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">-->
+					<!--                                        <button class="transition ease-in-out delay-150 bg-cyan-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">-->
 					<!--                                            Save Changes-->
 					<!--                                        </button>-->
 				</form>
