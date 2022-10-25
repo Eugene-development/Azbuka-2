@@ -1,16 +1,15 @@
 <script>
     export let content;
 
-	let header = 'Запись на замер';
-	let subheader= 'бесплатно';
-	let nameForm= 'Имя';
-	let phoneForm= 'Телефон';
-	let addressForm= 'Адрес';
-	let timeForm= 'Удобное время';
-	let emailForm= 'Почта';
-	// let variantForm= 'a';
-	// let volumeForm= 'a';
-	let comment= 'После отправки заявки с вами свяжется менеджер'
+	let header = 'Запись на замер'
+	let subheader = 'бесплатно'
+	let nameForm = ''
+	let phoneForm = ''
+	let addressForm = ''
+	let timeForm = ''
+	let commentForm= ''
+
+	const url = `/sendMainFormAzbuka`
 
 </script>
 
@@ -136,13 +135,14 @@
 
 					{#if true}
 						<div>
-							<label for="name" class="sr-only">{nameForm}</label>
+							<label for="name" class="sr-only">Имя</label>
 							<input
+							bind:value={nameForm}
 									type="text"
 									name="name"
 									id="name"
 									autocomplete="name"
-									placeholder="{nameForm}"
+									placeholder="Имя"
 									required
 									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 							/>
@@ -150,13 +150,14 @@
 					{/if}
 					{#if true}
 						<div>
-							<label for="phone" class="sr-only">{phoneForm}</label>
+							<label for="phone" class="sr-only">Телефон</label>
 							<input
+							bind:value={phoneForm}
 									type="text"
 									name="phone"
 									id="phone"
 									autocomplete="phone"
-									placeholder="{phoneForm}"
+									placeholder="Телефон"
 									required
 									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 							/>
@@ -164,13 +165,14 @@
 					{/if}
 					{#if true}
 						<div>
-							<label for="address" class="sr-only">{addressForm}</label>
+							<label for="address" class="sr-only">Адрес</label>
 							<input
+							bind:value={addressForm}
 									type="text"
 									name="address"
 									id="address"
 									autocomplete="address"
-									placeholder="{addressForm}"
+									placeholder="Адрес"
 									required
 									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 							/>
@@ -178,13 +180,14 @@
 					{/if}
 					{#if true}
 						<div>
-							<label for="time" class="sr-only">{timeForm}</label>
+							<label for="time" class="sr-only">Удобное время</label>
 							<input
+							bind:value={timeForm}
 									type="text"
 									name="time"
 									id="time"
 									autocomplete="time"
-									placeholder="{timeForm}"
+									placeholder="Удобное время"
 									required
 									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 							/>
@@ -193,14 +196,14 @@
 
 					{#if true}
 					<div>
-						<label for="email" class="sr-only">{emailForm}</label>
+						<label for="email" class="sr-only">Комментарий</label>
 						<input
+						bind:value={commentForm}
 								type="text"
 								name="email"
 								id="email"
 								autocomplete="email"
-								placeholder="{emailForm}"
-								required
+								placeholder="Комментарий"
 								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 						/>
 					</div>
@@ -221,15 +224,12 @@
 							>
 						{/if}
 					</div>
-					<!--                                        <button class="transition ease-in-out delay-150 bg-cyan-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">-->
-					<!--                                            Save Changes-->
-					<!--                                        </button>-->
 				</form>
 			</div>
 		</div>
 		<div class="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
 			<p class="text-xs leading-5 text-gray-500 text-center">
-				{comment}
+				После отправки заявки с вами свяжется менеджер
 			</p>
 		</div>
 	</div>
