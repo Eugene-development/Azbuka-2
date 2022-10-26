@@ -59,6 +59,11 @@
     {value}-
 {/each} -->
 
+<svelte:head>
+	<title>Шкафы купе и кухонные гарнитуры под заказ</title>
+	<meta name="description" content="Производим шкафы купе на заказ и недорогие кухонные гарнитуры" />
+</svelte:head>
+
 <Main {...data.contentMain} />
 <Benefits {...data.contentBenefits} />
 <Cooperation {...data.contentCooperation} />
