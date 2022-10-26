@@ -1,3 +1,12 @@
+// SEO
+const title = 'Контакты';
+const description = 'Связь с нами';
+
+const SEO = {
+	title,
+	description
+};
+
 // BC
 const titleBC = 'Контакты';
 const descriptionBC = 'Связаться с нами вы можете по почте, телефону или через чат.';
@@ -49,6 +58,7 @@ const content = {
 // };
 
 export const contentContacts = {
+	SEO,
 	BC,
 	content
 };
