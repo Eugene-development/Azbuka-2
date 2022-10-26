@@ -76,7 +76,7 @@
 				<div
 					class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"
 				>
-					<h2 class="text-5xl font-extrabold text-white" id="join-heading">{content.title}</h2>
+					<h2 class="text-5xl font-extrabold text-white" id="join-heading">{content.service}</h2>
 					<p class="text-lg text-white">{content.text}</p>
 					<!-- {#if (textButton)}
 						<button on:click|preventDefault={changeVisibleFormConsultation}

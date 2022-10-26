@@ -29,7 +29,6 @@ const BC = {
 };
 
 // Main
-
 const content = {
 	titleBlog,
 	descriptionBlog,
