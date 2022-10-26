@@ -1,3 +1,12 @@
+// SEO
+const title = 'Статья поста || Как правильно купить шкаф купе для спальни';
+const description = 'Информация о том как как правильно купить шкаф купе для спальни';
+
+const SEO = {
+	title,
+	description
+};
+
 // BC
 const titleBC = 'Статья блога';
 const descriptionBC = 'Ознакомьтесь с интересными статьями по мебельной тематике.';
@@ -83,6 +92,7 @@ const content = {
 };
 
 export const contentPost = {
+	SEO,
 	BC,
 	content
 };

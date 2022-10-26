@@ -1,3 +1,12 @@
+// SEO
+const title = 'Статья поста || Современный кухонный гарнитур на заказ';
+const description = 'Информация о том как как подобрать современный кухонный гарнитур на заказ';
+
+const SEO = {
+	title,
+	description
+};
+
 // BC
 const titleBC = 'Статья блога';
 const descriptionBC = 'Ознакомьтесь с интересными статьями по мебельной тематике.';
@@ -80,6 +89,7 @@ const content = {
 };
 
 export const contentPost = {
+	SEO,
 	BC,
 	content
 };
