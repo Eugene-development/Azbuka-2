@@ -1,7 +1,8 @@
 <script>
-    /** @type {import('./$types').PageData} */
-    export let content;
+	/** @type {import('./$types').PageData} */
+	export let content;
 </script>
+
 <!--<h1>-->
 <!--	<span class="mt-10 block text-center text-base font-semibold uppercase tracking-wide text-red-800"-->
 <!--				>Акции</span-->
@@ -11,7 +12,6 @@
 <!--	>Лучшие предложения</span-->
 <!--	>-->
 <!--</h1>-->
-
 
 <div class="bg-white">
 	<div class="max-w-full mx-auto py-4 px-4 sm:px-6 lg:px-8">
@@ -25,7 +25,7 @@
 					</h2>
 					<p class="mt-4 mb-24 text-lg leading-6 text-sky-100">{content.description}</p>
 					<a
-						href="{content.link}"
+						href={content.link}
 						sveltekit:prefetch
 						class=" bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-slate-800 hover:bg-indigo-50"
 						>Узнать подробнее</a

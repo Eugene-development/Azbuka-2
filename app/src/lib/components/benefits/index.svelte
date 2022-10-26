@@ -1,5 +1,5 @@
 <script>
-    export let content;
+	export let content;
 </script>
 
 <div class="bg-gradient-to-b from-white to-gray-50">
@@ -19,7 +19,11 @@
 			<div class="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
 				<div>
 					<div class="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-						<img src={content.img_1} alt={content.alt_1} class="w-full h-96 object-center object-cover" />
+						<img
+							src={content.img_1}
+							alt={content.alt_1}
+							class="w-full h-96 object-center object-cover"
+						/>
 					</div>
 					{#each content.benefits_1 as { value }}
 						<p class="mt-8 text-base text-gray-500">{@html value}</p>
@@ -27,7 +31,11 @@
 				</div>
 				<div>
 					<div class="w-full aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">
-						<img src={content.img_2} alt={content.alt_2} class="w-full h-96 object-center object-cover" />
+						<img
+							src={content.img_2}
+							alt={content.alt_2}
+							class="w-full h-96 object-center object-cover"
+						/>
 					</div>
 					{#each content.benefits_2 as { value }}
 						<p class="mt-8 text-base text-gray-500">{@html value}</p>

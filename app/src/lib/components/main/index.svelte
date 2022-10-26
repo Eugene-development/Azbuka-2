@@ -1,16 +1,39 @@
 <script>
-    export let content;
+	import axios from 'axios';
+	import { mainFormSent } from '$lib/store/stores.js';
+	import { useInvert } from '$lib/functions/invert';
+	const { invertToTrue } = useInvert;
 
-	let header = 'Запись на замер'
-	let subheader = 'бесплатно'
-	let nameForm = ''
-	let phoneForm = ''
-	let addressForm = ''
-	let timeForm = ''
-	let commentForm= ''
+	const changeVisibleMainForm = () => mainFormSent.update(invertToTrue);
 
-	const url = `/sendMainFormAzbuka`
+	let header = 'Запись на замер';
+	let subheader = 'бесплатно';
+	let nameForm = '';
+	let phoneForm = '';
+	let addressForm = '';
+	let timeForm = '';
+	let commentForm = '';
 
+	const url = `/send-main-form-azbuka`;
+	const apiCRUD = {
+		baseURL: 'http://127.0.0.1:8002/',
+		// baseURL: 'https://larux.ru:7721/',
+
+		headers: {
+			Authorization: `Bearer 7`
+		}
+	};
+	async function sendEmail() {
+		try {
+			const data = { nameForm, phoneForm, addressForm, timeForm, commentForm };
+			changeVisibleMainForm();
+			await axios.post(url, data, apiCRUD);
+		} catch (error) {
+			console.error(error);
+		}
+	}
+
+	export let content;
 </script>
 
 <div class="relative bg-gray-800 overflow-hidden">
@@ -111,130 +134,127 @@
 
 					<!-- <Form_v1 {...contentForm_v1} /> -->
 					<div
-	class="mt-16 sm:mt-24 lg:mt-4 lg:col-span-6 sm:transition sm:ease-in-out sm:delay-100 sm:hover:scale-110 sm:duration-500"
->
-	<div class="bg-white sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
-		<div class="px-4 py-8 sm:px-10">
-			<div>
-				<p class="text-lg font-bold text-gray-700 text-center">
-					{header}
-				</p>
-			</div>
+						class="mt-16 sm:mt-24 lg:mt-4 lg:col-span-6 sm:transition sm:ease-in-out sm:delay-100 sm:hover:scale-110 sm:duration-500"
+					>
+						<div class="bg-white sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
+							<div class="px-4 py-8 sm:px-10">
+								<div>
+									<p class="text-lg font-bold text-gray-700 text-center">
+										{header}
+									</p>
+								</div>
 
-			<div class="mt-6 relative">
-				<div class="absolute inset-0 flex items-center" aria-hidden="true">
-					<div class="w-full border-t border-gray-300"></div>
-				</div>
-				<div class="relative flex justify-center text-sm">
-					<span class="px-2 bg-white text-gray-500 "> {subheader} </span>
-				</div>
-			</div>
+								<div class="mt-6 relative">
+									<div class="absolute inset-0 flex items-center" aria-hidden="true">
+										<div class="w-full border-t border-gray-300" />
+									</div>
+									<div class="relative flex justify-center text-sm">
+										<span class="px-2 bg-white text-gray-500 "> {subheader} </span>
+									</div>
+								</div>
 
-			<div class="mt-6">
-				<form  class="space-y-6">
+								<div class="mt-6">
+									<form on:submit|preventDefault|once={sendEmail} class="space-y-6">
+										{#if true}
+											<div>
+												<label for="name" class="sr-only">Имя</label>
+												<input
+													bind:value={nameForm}
+													type="text"
+													name="name"
+													id="name"
+													autocomplete="name"
+													placeholder="Имя"
+													required
+													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+												/>
+											</div>
+										{/if}
+										{#if true}
+											<div>
+												<label for="phone" class="sr-only">Телефон</label>
+												<input
+													bind:value={phoneForm}
+													type="text"
+													name="phone"
+													id="phone"
+													autocomplete="phone"
+													placeholder="Телефон"
+													required
+													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+												/>
+											</div>
+										{/if}
+										{#if true}
+											<div>
+												<label for="address" class="sr-only">Адрес</label>
+												<input
+													bind:value={addressForm}
+													type="text"
+													name="address"
+													id="address"
+													autocomplete="address"
+													placeholder="Адрес"
+													required
+													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+												/>
+											</div>
+										{/if}
+										{#if true}
+											<div>
+												<label for="time" class="sr-only">Удобное время</label>
+												<input
+													bind:value={timeForm}
+													type="text"
+													name="time"
+													id="time"
+													autocomplete="time"
+													placeholder="Удобное время"
+													required
+													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+												/>
+											</div>
+										{/if}
 
-					{#if true}
-						<div>
-							<label for="name" class="sr-only">Имя</label>
-							<input
-							bind:value={nameForm}
-									type="text"
-									name="name"
-									id="name"
-									autocomplete="name"
-									placeholder="Имя"
-									required
-									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-							/>
-						</div>
-					{/if}
-					{#if true}
-						<div>
-							<label for="phone" class="sr-only">Телефон</label>
-							<input
-							bind:value={phoneForm}
-									type="text"
-									name="phone"
-									id="phone"
-									autocomplete="phone"
-									placeholder="Телефон"
-									required
-									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-							/>
-						</div>
-					{/if}
-					{#if true}
-						<div>
-							<label for="address" class="sr-only">Адрес</label>
-							<input
-							bind:value={addressForm}
-									type="text"
-									name="address"
-									id="address"
-									autocomplete="address"
-									placeholder="Адрес"
-									required
-									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-							/>
-						</div>
-					{/if}
-					{#if true}
-						<div>
-							<label for="time" class="sr-only">Удобное время</label>
-							<input
-							bind:value={timeForm}
-									type="text"
-									name="time"
-									id="time"
-									autocomplete="time"
-									placeholder="Удобное время"
-									required
-									class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-							/>
-						</div>
-					{/if}
+										{#if true}
+											<div>
+												<label for="email" class="sr-only">Комментарий</label>
+												<input
+													bind:value={commentForm}
+													type="text"
+													name="email"
+													id="email"
+													autocomplete="email"
+													placeholder="Комментарий"
+													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
+												/>
+											</div>
+										{/if}
 
-					{#if true}
-					<div>
-						<label for="email" class="sr-only">Комментарий</label>
-						<input
-						bind:value={commentForm}
-								type="text"
-								name="email"
-								id="email"
-								autocomplete="email"
-								placeholder="Комментарий"
-								class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
-						/>
+										<div>
+											{#if $mainFormSent}
+												<span
+													class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
+													>Отправлено. Ожидайте звонка.</span
+												>
+											{:else}
+												<button
+													type="submit"
+													class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
+													>Отправить</button
+												>
+											{/if}
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
+								<p class="text-xs leading-5 text-gray-500 text-center">
+									После отправки заявки с вами свяжется менеджер
+								</p>
+							</div>
+						</div>
 					</div>
-						{/if}
-
-
-					<div>
-						{#if true}
-							<span
-									class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
-							>Отправлено</span
-							>
-						{:else}
-							<button
-									type="submit"
-								class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-cyan-500 hover:from-cyan-400 via-green-600 hover:via-green-700 to-cyan-500 hover:to-cyan-400 "
-								>Отправить</button
-							>
-						{/if}
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
-			<p class="text-xs leading-5 text-gray-500 text-center">
-				После отправки заявки с вами свяжется менеджер
-			</p>
-		</div>
-	</div>
-</div>
-
 				</div>
 			</div>
 		</main>

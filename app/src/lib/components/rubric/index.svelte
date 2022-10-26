@@ -1,7 +1,6 @@
 <script>
-    export let content;
+	export let content;
 </script>
-
 
 <div class="py-16 text-center bg-gray-100">
 	<h2 class="text-base text-red-700 font-semibold tracking-wide uppercase">Рубрика</h2>
@@ -34,7 +33,7 @@
 		</div>
 		<div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-4 lg:gap-6">
 			{#each content.img as { path, alt }}
-				<img class="bg-gray-100 rounded-lg h-52 w-auto" src={path} alt="{alt}" />
+				<img class="bg-gray-100 rounded-lg h-52 w-auto" src={path} {alt} />
 			{/each}
 		</div>
 	</div>

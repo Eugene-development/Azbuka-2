@@ -3,7 +3,6 @@
 	import { useInvert } from '$lib/functions/broker';
 	const { invert } = useInvert;
 	export let content;
-	
 </script>
 
 {#if $visibleMobileMenu}

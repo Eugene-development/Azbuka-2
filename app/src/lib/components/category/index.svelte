@@ -1,5 +1,5 @@
 <script>
-    export let content;
+	export let content;
 </script>
 
 <div class="bg-gray-100">
@@ -17,7 +17,7 @@
 						class="py-10 px-6  text-center rounded-lg xl:px-8 xl:text-left shadow-2xl shadow-gray-600"
 					>
 						<div class="space-y-8 xl:space-y-10">
-							<img class="mx-auto w-80 h-56 rounded-md xl:w-96 xl:h-56" src={img} alt="{alt}" />
+							<img class="mx-auto w-80 h-56 rounded-md xl:w-96 xl:h-56" src={img} {alt} />
 							<div class="space-y-2 xl:flex xl:items-center xl:justify-between">
 								<div class="font-medium text-lg leading-6 space-y-1 divide-y divide-green-300">
 									<h3 class="py-1 text-gray-800 text-2xl">{name}</h3>
