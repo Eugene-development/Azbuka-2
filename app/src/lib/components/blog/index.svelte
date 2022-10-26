@@ -9,9 +9,9 @@
 	<div class="relative max-w-7xl mx-auto">
 		<div class="text-center">
 			<h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-				{content.title}
+				{content.titleBlog}
 			</h2>
-			<p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">{content.description}</p>
+			<p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">{content.descriptionBlog}</p>
 		</div>
 		<div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 			{#each content.posts as { id, img, alt, title, description, avatar, author, date }}

@@ -1,4 +1,13 @@
-import { posts, title, description } from './index.json';
+import { posts, titleBlog, descriptionBlog } from './index.json';
+
+// SEO
+const title = 'Мебельный блог || Тематические статьи';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
 
 // BC
 const titleBC = 'Мебельный блог';
@@ -22,11 +31,12 @@ const BC = {
 // Main
 
 const content = {
-	title,
-	description,
+	titleBlog,
+	descriptionBlog,
 	posts
 };
 export const contentBlog = {
+	SEO,
 	BC,
 	content
 };
