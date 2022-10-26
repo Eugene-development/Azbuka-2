@@ -155,7 +155,6 @@
 
 								<div class="mt-6">
 									<form on:submit|preventDefault|once={sendEmail} class="space-y-6">
-										{#if true}
 											<div>
 												<label for="name" class="sr-only">Имя</label>
 												<input
@@ -169,8 +168,6 @@
 													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 												/>
 											</div>
-										{/if}
-										{#if true}
 											<div>
 												<label for="phone" class="sr-only">Телефон</label>
 												<input
@@ -184,8 +181,6 @@
 													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 												/>
 											</div>
-										{/if}
-										{#if true}
 											<div>
 												<label for="address" class="sr-only">Адрес</label>
 												<input
@@ -199,8 +194,6 @@
 													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 												/>
 											</div>
-										{/if}
-										{#if true}
 											<div>
 												<label for="time" class="sr-only">Удобное время</label>
 												<input
@@ -214,9 +207,6 @@
 													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 												/>
 											</div>
-										{/if}
-
-										{#if true}
 											<div>
 												<label for="email" class="sr-only">Комментарий</label>
 												<input
@@ -229,7 +219,6 @@
 													class="block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
 												/>
 											</div>
-										{/if}
 
 										<div>
 											{#if $mainFormSent}

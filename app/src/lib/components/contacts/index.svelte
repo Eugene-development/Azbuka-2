@@ -4,14 +4,36 @@
 	import { useInvert } from '$lib/functions/invert';
 	const { invertToTrue } = useInvert;
 
-	const changeVisibleContactForm = () => contactFormSent.update(invertToTrue);
+	const changeVisibleSentenceForm = () => contactFormSent.update(invertToTrue);
 
-	let header = 'Предложение о сотрудничестве';
-	let name = '';
-	let position = '';
-	let email = '';
-	let phone = '';
-	let sentence = '';
+	const header = 'Предложение о сотрудничестве';
+	const dataForm = {
+		 name: '',
+		 position: '',
+		 email: '',
+		 phone: '',
+		 sentence: ''
+	}
+
+	const url = `/send-sentence-form-azbuka`;
+	const apiCRUD = {
+		baseURL: 'http://127.0.0.1:8002/',
+		// baseURL: 'https://larux.ru:7721/',
+
+		headers: {
+			Authorization: `Bearer 7`
+		}
+	};
+	async function sendSentence() {
+		try {
+			const data = { ...dataForm };
+			console.log(data);
+			changeVisibleSentenceForm();
+			await axios.post(url, data, apiCRUD);
+		} catch (error) {
+			console.error(error);
+		}
+	}
 
 	export let content;
 </script>
@@ -187,12 +209,12 @@
 					<h3 class="text-lg font-medium text-gray-900 border-b pb-2">
 						{header}
 					</h3>
-					<form class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+					<form on:submit|preventDefault|once={sendSentence} class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
 						<div>
 							<label for="name" class="block text-sm font-medium text-gray-900">Имя</label>
 							<div class="mt-1">
 								<input
-									bind:value={name}
+									bind:value={dataForm.name}
 									type="text"
 									name="name"
 									id="name"
@@ -207,7 +229,7 @@
 							>
 							<div class="mt-1">
 								<input
-									bind:value={position}
+									bind:value={dataForm.position}
 									type="text"
 									name="position"
 									id="position"
@@ -221,7 +243,7 @@
 							<label for="email" class="block text-sm font-medium text-gray-900">Почта</label>
 							<div class="mt-1">
 								<input
-									bind:value={email}
+									bind:value={dataForm.email}
 									id="email"
 									required
 									name="email"
@@ -237,7 +259,7 @@
 							</div>
 							<div class="mt-1">
 								<input
-									bind:value={phone}
+									bind:value={dataForm.phone}
 									id="phone"
 									type="text"
 									name="phone"
@@ -251,13 +273,13 @@
 						<div class="sm:col-span-2">
 							<div class="flex justify-between">
 								<label for="sentence" class="block text-sm font-medium text-gray-900"
-									>Комментарий</label
+									>Предложение</label
 								>
 								<span id="sentence-max" class="text-sm text-gray-500">Максимум 500 символов</span>
 							</div>
 							<div class="mt-1">
 								<textarea
-									bind:value={sentence}
+									bind:value={dataForm.sentence}
 									id="sentence"
 									required
 									name="sentence"
