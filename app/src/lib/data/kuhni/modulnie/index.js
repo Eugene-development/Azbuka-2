@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Модульные кухонные гарнитуры';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами модульных кухонных гарнитуров';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Модульные',
 	descriptionCategory: 'Модульные кухонные гарнитуры'

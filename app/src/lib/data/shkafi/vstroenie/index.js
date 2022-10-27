@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Встроенные шкафы';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами встроенных шкафов';
 const pathImgBC =
@@ -96,6 +106,7 @@ const content = {
 };
 
 export const contentShkafiVstroenie = {
+	SEO,
 	BC,
 	content
 };

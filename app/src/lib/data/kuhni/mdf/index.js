@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Кухонные гарнитуры МДФ';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с фасадами МДФ';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'МДФ',
 	descriptionCategory: 'Кухонные гарнитуры с фасадами МДФ'
@@ -108,6 +119,7 @@ const content = {
 };
 
 export const contentKuhniMDF = {
+	SEO,
 	BC,
 	content
 };

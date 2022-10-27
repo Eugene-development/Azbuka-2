@@ -5,10 +5,10 @@
 	export let data;
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
 	<title>Кухонные гарнитуры под заказ</title>
 	<meta name="description" content="Производим недорогие кухонные гарнитуры" />
-</svelte:head>
+</svelte:head> -->
 
 <BreadCrumbs {...data.contentKuhni} />
 <Kuhni {...data.contentKuhni} />

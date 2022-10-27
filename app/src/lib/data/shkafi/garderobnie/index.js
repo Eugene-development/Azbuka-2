@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Гардеробные';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами гардеробных различного наполнения';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Гардеробные',
 	descriptionCategory: 'Вместительные гардеробные'
@@ -29,6 +40,7 @@ const content = {
 };
 
 export const contentShkafiGarderobnie = {
+	SEO,
 	BC,
 	content
 };

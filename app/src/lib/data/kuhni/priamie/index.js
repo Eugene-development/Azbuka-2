@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Прямые кухонные гарнитуры';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонными гарнитурами прямой формы';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Прямые',
 	descriptionCategory: 'Прямые кухонные гарнитуры'
@@ -108,6 +119,7 @@ const content = {
 };
 
 export const contentKuhniPriamie = {
+	SEO,
 	BC,
 	content
 };

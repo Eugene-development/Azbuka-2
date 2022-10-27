@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Двери купе';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами дверей купе для ниш помещений';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Двери',
 	descriptionCategory: 'Двери купе для перегородок и ниш'
@@ -60,6 +71,7 @@ const content = {
 };
 
 export const contentShkafiDveri = {
+	SEO,
 	BC,
 	content
 };

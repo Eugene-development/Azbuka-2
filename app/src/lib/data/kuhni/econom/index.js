@@ -1,3 +1,12 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
 // BC
 const titleBC = 'Кухонные гарнитуры эконом';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров серии эконом';
@@ -62,6 +71,7 @@ const content = {
 };
 
 export const contentKuhniEconom = {
+	SEO,
 	BC,
 	content
 };

@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Шкафы в Нижнем Новгороде';
 const descriptionBC = 'Шкафы на заказ для вашей комнаты или гардероба. Дизайн проект в подарок.';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	h1: 'Гардеробы и шкафы на заказ',
 	title: 'Распашные шкафы и шкафы купе',
@@ -90,6 +101,7 @@ const content = {
 };
 
 export const contentShkafi = {
+	SEO,
 	BC,
 	content
 };

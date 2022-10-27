@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Угловые кухонные гарнитуры';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров угловой формы';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Угловые',
 	descriptionCategory: 'Угловые кухонные гарнитуры'
@@ -114,6 +125,7 @@ const content = {
 };
 
 export const contentKuhniUglovie = {
+	SEO,
 	BC,
 	content
 };

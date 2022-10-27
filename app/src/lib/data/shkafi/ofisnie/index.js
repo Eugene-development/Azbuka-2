@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Офисные шкафы';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами офисных шкафов';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Офисные',
 	descriptionCategory: 'Офисные шкафы для бумаг'
@@ -29,6 +40,7 @@ const content = {
 };
 
 export const contentShkafiOfisnie = {
+	SEO,
 	BC,
 	content
 };

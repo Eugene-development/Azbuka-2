@@ -1,3 +1,12 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
 // BC
 const titleBC = 'Кухни в Нижнем Новгороде';
 const descriptionBC = 'Кухонные гарнитуры на заказ под ваши размеры. Дизайн проект в подарок.';
@@ -92,6 +101,7 @@ const content = {
 };
 
 export const contentKuhni = {
+	SEO,
 	BC,
 	content
 };

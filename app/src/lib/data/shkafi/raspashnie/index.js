@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Распашные шкафы';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами распашных шкафов';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Распашные',
 	descriptionCategory: 'Шкафы с распашными дверками'
@@ -66,6 +77,7 @@ const content = {
 };
 
 export const contentShkafiRaspashnie = {
+	SEO,
 	BC,
 	content
 };

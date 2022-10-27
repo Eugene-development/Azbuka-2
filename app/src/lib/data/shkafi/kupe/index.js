@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Шкафы купе';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами шкафов купе на заказ по доступным ценам';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Купе',
 	descriptionCategory: 'Практичные шкафы-купе'
@@ -203,6 +214,7 @@ const content = {
 };
 
 export const contentShkafiKupe = {
+	SEO,
 	BC,
 	content
 };

@@ -1,3 +1,13 @@
+// SEO
+const title = '';
+const description = '';
+
+const SEO = {
+	title,
+	description
+};
+
+//BC
 const titleBC = 'Кухонные гарнитуры из пластика';
 const descriptionBC = 'Ознакомьтесь с нашими вариантами кухонных гарнитуров с фасадами из пластика';
 const pathImgBC =
@@ -16,6 +26,7 @@ const BC = {
 	pathImgBC
 };
 
+//Main
 const mainText = {
 	titleCategory: 'Пластик',
 	descriptionCategory: 'Кухонные гарнитуры с пластиковыми фасадами'
@@ -60,6 +71,7 @@ const content = {
 };
 
 export const contentKuhniPlastic = {
+	SEO,
 	BC,
 	content
 };
