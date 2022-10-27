@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Угловые кухонные гарнитуры в Нижнем Новгороде';
+const description = 'Варианты кухонных гарнитуров угловой формы в Нижнем Новгороде';
 
 const SEO = {
 	title,

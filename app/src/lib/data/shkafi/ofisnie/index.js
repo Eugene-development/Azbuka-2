@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Офисные шкафы в Нижнем Новгороде';
+const description = 'Варианты офисных шкафов в Нижнем Новгороде';
 
 const SEO = {
 	title,

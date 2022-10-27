@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Встроенные шкафы в Нижнем Новгороде';
+const description = 'Варианты встроенных шкафов в Нижнем Новгороде';
 
 const SEO = {
 	title,

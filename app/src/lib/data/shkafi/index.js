@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Шкафы в Нижнем Новгороде в Нижнем Новгороде';
+const description = 'Шкафы на заказ в Нижнем Новгороде';
 
 const SEO = {
 	title,

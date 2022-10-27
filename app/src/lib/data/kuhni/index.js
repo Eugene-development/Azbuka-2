@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Кухонные гарнитуры в Нижнем Новгороде';
+const description = 'Кухонные гарнитуры на заказ в Нижнем Новгороде';
 
 const SEO = {
 	title,

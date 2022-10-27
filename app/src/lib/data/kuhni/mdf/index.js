@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Кухонные гарнитуры МДФ в Нижнем Новгороде';
+const description = 'Варианты кухонных гарнитуров с фасадами МДФ в Нижнем Новгороде';
 
 const SEO = {
 	title,

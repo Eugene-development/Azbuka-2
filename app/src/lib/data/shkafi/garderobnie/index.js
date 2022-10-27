@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Гардеробные в Нижнем Новгороде';
+const description = 'Варианты гардеробных различного наполнения в Нижнем Новгороде';
 
 const SEO = {
 	title,

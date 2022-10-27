@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Прямые кухонные гарнитуры в Нижнем Новгороде';
+const description = 'Варианты кухонными гарнитурами прямой формы в Нижнем Новгороде';
 
 const SEO = {
 	title,

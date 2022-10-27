@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Кухонные гарнитуры эконом в Нижнем Новгороде';
+const description = 'Варианты кухонных гарнитуров серии эконом в Нижнем Новгороде';
 
 const SEO = {
 	title,

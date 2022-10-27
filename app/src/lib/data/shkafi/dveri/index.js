@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Двери купе в Нижнем Новгороде';
+const description = 'Варианты дверей купе для ниш помещений в Нижнем Новгороде';
 
 const SEO = {
 	title,

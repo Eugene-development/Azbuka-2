@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Кухонные гарнитуры из пластика в Нижнем Новгороде';
+const description = 'Варианты кухонных гарнитуров с фасадами из пластика в Нижнем Новгороде';
 
 const SEO = {
 	title,

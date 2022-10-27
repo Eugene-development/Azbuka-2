@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Шкафы купе в Нижнем Новгороде';
+const description = 'Варианты шкафов купе на заказ по доступным ценам в Нижнем Новгороде';
 
 const SEO = {
 	title,

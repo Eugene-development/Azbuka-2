@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Модульные кухонные гарнитуры в Нижнем Новгороде';
+const description = 'Варианты модульных кухонных гарнитуров в Нижнем Новгороде';
 
 const SEO = {
 	title,

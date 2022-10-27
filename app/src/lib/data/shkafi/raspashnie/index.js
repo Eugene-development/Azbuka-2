@@ -1,6 +1,6 @@
 // SEO
-const title = '';
-const description = '';
+const title = 'Распашные шкафы в Нижнем Новгороде';
+const description = 'Варианты распашных шкафов в Нижнем Новгороде';
 
 const SEO = {
 	title,
