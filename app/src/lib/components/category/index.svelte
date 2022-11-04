@@ -9,7 +9,7 @@
 				<h2 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
 					{content.mainText.titleCategory}
 				</h2>
-				<p class="text-xl text-gray-900">{content.mainText.descriptionCategory}</p>
+				<p class="text-xl max-w-4xl text-gray-900">{content.mainText.descriptionCategory}</p>
 			</div>
 			<div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-3 lg:gap-10">
 				{#each content.products as { name, text, img, alt }}
