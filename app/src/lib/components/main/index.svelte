@@ -36,7 +36,12 @@
 	export let content;
 </script>
 
-<div class="relative bg-gray-800 overflow-hidden">
+<div class="relative overflow-hidden">
+		<div class="absolute inset-0">
+		<img class="w-full h-full object-cover" src="https://storage.yandexcloud.net/brand-logo/mos-mebel/MarketingSectionV5/cabinets/1.jpg" alt="фото фона" />
+		<div class="absolute inset-0 bg-gray-700 mix-blend-multiply" aria-hidden="true" />
+	</div>
+
 	<div class="hidden sm:block sm:absolute sm:inset-0" aria-hidden="true">
 		<svg
 			class="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
@@ -69,7 +74,7 @@
 					>
 						<div>
 							<div
-								class="inline-flex items-center text-white bg-gray-900 rounded-md p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
+								class="inline-flex items-center text-white bg-gray-900 bg-opacity-40 rounded-md p-1 pr-4 sm:text-base lg:text-sm xl:text-base"
 							>
 								<span
 									class="ml-0.5 px-4 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-md"
@@ -92,13 +97,13 @@
 							</div>
 							{@html content.H1}
 							<p
-								class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-base lg:text-base xl:text-base antialiased"
+								class="mt-3 text-base text-white sm:mt-5 sm:text-base lg:text-base xl:text-base"
 								id="id_1"
 							>
 								{content.text_1}
 							</p>
 							<p
-								class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-base lg:text-base xl:text-base antialiased"
+								class="mt-3 text-base text-white sm:mt-5 sm:text-base lg:text-base xl:text-base"
 								id="id_2"
 							>
 								{content.text_2}
