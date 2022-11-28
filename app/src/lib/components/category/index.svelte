@@ -5,11 +5,11 @@
 <div class="bg-gray-100">
 	<div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-16 ">
 		<div class="space-y-12">
-			<div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
+			<div class="space-y-5 text-center sm:space-y-4">
 				<h2 class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
 					{content.mainText.titleCategory}
 				</h2>
-				<p class="text-xl max-w-4xl text-gray-900">{content.mainText.descriptionCategory}</p>
+				<p class="text-xl  text-gray-900">{content.mainText.descriptionCategory}</p>
 			</div>
 			<div class="space-y-4 sm:grid sm:grid-cols-2 sm:gap-8 sm:space-y-0 lg:grid-cols-3 lg:gap-10">
 				{#each content.products as { name, text, img, alt }}
